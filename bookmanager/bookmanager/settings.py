@@ -56,7 +56,7 @@ ROOT_URLCONF = 'bookmanager.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'temps'],  # 告知系统魔板文件放在哪里
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
